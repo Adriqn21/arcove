@@ -1,120 +1,587 @@
-<!doctype html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Arcove SAC | Diseño, Fabricación y Montaje de Estructuras Metálicas en Perú</title>
+  <meta name="description" content="Diseño estructural (E.090), fabricación en taller propio con soldadura AWS D1.1 y montaje de naves industriales, almacenes y estructuras metálicas en todo el Perú.">
+  <meta name="keywords" content="estructuras metálicas, naves industriales, montaje industrial, ingeniería estructural, coberturas, mantenimiento industrial, Arcove SAC">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-
-  <title>Arcove SAC</title>
-
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css?v=2.0">
 </head>
 <body>
 
-
-<!-- Barra superior animada -->
-<div class="top-bar animate__animated animate__fadeInDown">
-  <div class="top-bar-container">
-    <!-- Información de contacto -->
-    <div class="top-bar-contact">
-      <a href="mailto:info@arcovesac.com"><i class="fas fa-envelope"></i> info@arcovesac.com</a>
-      <a href="tel:+51987654321"><i class="fas fa-phone-alt"></i> +51 99999999</a>
-      <span class="top-bar-schedule"><i class="fas fa-clock"></i> Lun - Vie: 8:00 am - 6:00 pm</span>
+  <!-- Barra Superior Minimalista -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-contact">
+        <a href="mailto:info@arcovesac.com"><i class="fas fa-envelope"></i> info@arcovesac.com</a>
+        <a href="tel:+51987654321"><i class="fas fa-phone-alt"></i> +51 987 654 321</a>
+        <span><i class="fas fa-map-marker-alt"></i> Lima, Perú · Obras en todo el país</span>
+      </div>
+      <div class="top-bar-social">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
     </div>
-    <div class="top-bar-social">
-      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <!-- Header & Menú Principal -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="nav-logo" aria-label="Arcove SAC - Inicio">
+        <img src="img/logo%20arcove.png" alt="Logo Arcove SAC" width="44" height="44" onerror="this.onerror=null;this.src='icon.png'">
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">ARCOVE <span>SAC</span></span>
+          <span class="nav-logo-subtitle">Ingeniería &amp; Estructuras</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Abrir menú de navegación" aria-controls="main-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
+          <li><a href="PAG/Quienes%20Somos.html">Quiénes Somos</a></li>
+          <li><a href="PAG/Servicios.html">Servicios</a></li>
+          <li><a href="PAG/Contactos.html">Contacto</a></li>
+        </ul>
+        <a href="PAG/Contactos.html" class="nav-cta">
+          <i class="fas fa-file-signature"></i> Cotizar Proyecto
+        </a>
+      </nav>
     </div>
-  </div>
-</div>
+  </header>
 
-<header class="site-header animate__animated animate__fadeInDown">
-  <div class="header-container">
-    <a href="index.html" class="nav-logo">
-      <img src="img/log.png" alt="Logo Arcove SAC" height="70">
-    </a>
+  <main>
+  <!-- Hero Banner de Alto Impacto -->
+  <section class="hero-banner">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge-tag light animate__animated animate__fadeInDown">
+          <i class="fas fa-award"></i> Ingeniería y Construcción Metálica
+        </span>
 
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <h1 class="hero-title animate__animated animate__fadeInUp">
+          Diseño, fabricación y montaje de <span>estructuras metálicas</span>
+        </h1>
 
-    <nav class="main-nav" id="main-nav">
-      <ul class="nav-list">
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="PAG/Quienes Somos.html">Quiénes Somos</a></li>
-        <li><a href="PAG/Servicios.html">Servicios</a></li>
-        <li><a href="PAG/Contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <p class="hero-description animate__animated animate__fadeInUp">
+          Naves industriales, almacenes, tijerales y estructuras pesadas. Calculamos según la norma E.090 del RNE, fabricamos en taller propio con soldadura AWS D1.1 y montamos en obra en cualquier región del Perú.
+        </p>
 
-<!-- Banner en la parte superior -->
-<div class="hero-banner">
-  <h1 class="animate__animated animate__fadeInUp">Arcove SAC</h1>
-</div>
+        <div class="hero-actions animate__animated animate__fadeInUp">
+          <a href="PAG/Contactos.html" class="btn btn-primary">
+            <i class="fas fa-calculator"></i> Solicitar Cotización
+          </a>
+          <a href="PAG/Servicios.html" class="btn btn-outline-light">
+            <i class="fas fa-th-list"></i> Ver Servicios
+          </a>
+        </div>
 
-<section class="estructuras-features-container">
-  <div class="estructuras-feature-card">
-    <div class="estructuras-icon">📐</div> <h3>Diseño e Ingeniería</h3>
-    <a href="#" class="estructuras-link">Ver detalles <span>→</span></a>
-  </div>
-
-  <div class="estructuras-feature-card">
-    <div class="estructuras-icon">🏭</div> <h3>Fabricación a Medida</h3>
-    <a href="#" class="estructuras-link">Ver detalles <span>→</span></a>
-  </div>
-
-  <div class="estructuras-feature-card">
-    <div class="estructuras-icon">🏗️</div> <h3>Montaje Estructural</h3>
-    <a href="#" class="estructuras-link">Ver detalles <span>→</span></a>
-  </div>
-
-  <div class="estructuras-feature-card">
-    <div class="estructuras-icon">🛠️</div> <h3>Mantenimiento Industrial</h3>
-    <a href="#" class="estructuras-link">Ver detalles <span>→</span></a>
-  </div>
-</section>
-
-
-
-
-    <footer class="site-footer">
-      <div class="footer-container">
-
-        <div>
-        <h3>Contactos</h3>
-          <p>Dirección: </p>
-          <p>Teléfono: </p>
-          <p>Email: </p>
+        <div class="hero-highlights animate__animated animate__fadeIn">
+          <div class="hero-highlight-item">
+            <i class="fas fa-shield-alt"></i>
+            <span>Normas E.090, AWS D1.1 y AISC 360</span>
+          </div>
+          <div class="hero-highlight-item">
+            <i class="fas fa-hard-hat"></i>
+            <span>Ingenieros colegiados (CIP)</span>
+          </div>
+          <div class="hero-highlight-item">
+            <i class="fas fa-folder-open"></i>
+            <span>Dossier de calidad en cada entrega</span>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-section">
-        <h3>Información</h3>
-        <ul>
-          <li><a href="PAG/Quienes Somos.html">Sobre Nosotros</a></li>
-          <li><a href="PAG/Servicios.html">Nuestros Servicios</a></li>
-          <li><a href="#">Términos y Condiciones</a></li>
-        </ul>
+  <!-- Barra de Estadísticas -->
+  <section class="stats-section" aria-label="Cifras de Arcove SAC">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="stat-number" data-target="15" data-suffix="+">15<span>+</span></div>
+          <div class="stat-label">Años en el rubro</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-city"></i></div>
+          <div class="stat-number" data-target="350" data-suffix="+">350<span>+</span></div>
+          <div class="stat-label">Proyectos entregados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-weight-hanging"></i></div>
+          <div class="stat-number" data-target="2800" data-suffix=" t">2,800<span> t</span></div>
+          <div class="stat-label">Toneladas de acero fabricadas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+          <div class="stat-number" data-target="100" data-suffix="%">100<span>%</span></div>
+          <div class="stat-label">Acero con certificado de calidad</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios Principales -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag"><i class="fas fa-cubes"></i> Servicios</span>
+        <h2>Servicios que realizamos</h2>
+        <p>Nos encargamos de todo el proyecto: ingeniería, fabricación en taller, transporte y montaje en obra.</p>
       </div>
 
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-drafting-compass"></i>
+          </div>
+          <h3>Diseño y Cálculo Estructural</h3>
+          <p>Análisis sísmico y diseño en SAP2000 según normas E.030 y E.090; modelado 3D y detallado en Tekla Structures.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Memoria de cálculo firmada por ingeniero CIP</li>
+            <li><i class="fas fa-check"></i> Planos de fabricación y montaje</li>
+            <li><i class="fas fa-check"></i> Metrado y optimización del peso de acero</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Arcove SAC. Todos los derechos reservados.</p>
+        <!-- Servicio 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h3>Fabricación en Taller</h3>
+          <p>Corte CNC por plasma, armado y soldadura con soldadores calificados de vigas, columnas y tijerales.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Acero estructural ASTM A36 y A572 Gr. 50</li>
+            <li><i class="fas fa-check"></i> Inspección visual y tintes penetrantes en soldaduras</li>
+            <li><i class="fas fa-check"></i> Pintura epóxica según especificación del proyecto</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-truck-loading"></i>
+          </div>
+          <h3>Montaje e Izaje</h3>
+          <p>Montaje en obra con grúas telescópicas y personal acreditado para trabajos en altura.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Plan de izaje (rigging plan) por cada maniobra</li>
+            <li><i class="fas fa-check"></i> Gestión de seguridad SSOMA en obra</li>
+            <li><i class="fas fa-check"></i> Cronograma de montaje por hitos</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-warehouse"></i>
+          </div>
+          <h3>Naves Industriales y Almacenes</h3>
+          <p>Naves de pórticos a dos aguas, techos parabólicos y coberturas para almacenes y centros de distribución.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Coberturas de aluzinc TR4 y paneles PIR</li>
+            <li><i class="fas fa-check"></i> Iluminación cenital y ventilación natural</li>
+            <li><i class="fas fa-check"></i> Cumbreras, canaletas y sellos contra filtraciones</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Mantenimiento y Arenado</h3>
+          <p>Inspección de estructuras existentes, arenado SSPC-SP6 (comercial) o SP10 (casi blanco) y refuerzo de columnas y vigas.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Pintura epóxica y acabado de poliuretano</li>
+            <li><i class="fas fa-check"></i> Pintura intumescente contra fuego</li>
+            <li><i class="fas fa-check"></i> Reforzamiento sísmico de estructuras</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Carpintería Metálica Pesada</h3>
+          <p>Portones industriales, escaleras de evacuación según norma A.130 del RNE, pasarelas técnicas y barandas.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Diseño conforme a requisitos de ITSE</li>
+            <li><i class="fas fa-check"></i> Acabado galvanizado o pintado</li>
+            <li><i class="fas fa-check"></i> Fabricación a medida según planos</li>
+          </ul>
+          <a href="PAG/Servicios.html" class="service-card-link">Ver detalle <i class="fas fa-arrow-right"></i></a>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
+  <!-- Por Qué Elegirnos -->
+  <section class="why-us-section">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-us-content">
+          <span class="badge-tag"><i class="fas fa-star"></i> Por qué elegirnos</span>
+          <h2>¿Por qué trabajar con Arcove SAC?</h2>
+          <p class="lead">Un solo contratista para la ingeniería, la fabricación y el montaje: menos coordinación para usted y un único responsable de la calidad final.</p>
 
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="feature-info">
+                <h4>Soldadura según AWS D1.1</h4>
+                <p>Procedimientos de soldadura documentados, soldadores calificados y ensayos no destructivos en las uniones críticas.</p>
+              </div>
+            </div>
 
-    <script src="js/app.js"></script>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-clock"></i></div>
+              <div class="feature-info">
+                <h4>Plazos por escrito</h4>
+                <p>Cada proyecto tiene un cronograma de fabricación y despacho con fechas definidas desde la cotización.</p>
+              </div>
+            </div>
 
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+              <div class="feature-info">
+                <h4>Seguridad en obra</h4>
+                <p>Plan SSOMA por proyecto, análisis de trabajo seguro (ATS) diario y personal con SCTR vigente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-us-visual">
+          <div class="visual-card-main">
+            <div class="visual-badge">
+              <i class="fas fa-medal"></i>
+              <div>
+                <div>Calidad trazable</div>
+                <small class="visual-badge-sub">Certificados de material y ensayos</small>
+              </div>
+            </div>
+            <h3>Obras en todo el Perú</h3>
+            <p>Ejecutamos proyectos para minería, logística, retail e infraestructura en Lima y provincias.</p>
+
+            <div class="specs-list">
+              <div class="spec-box">
+                <h5>ASTM</h5>
+                <span>A36 / A572</span>
+              </div>
+              <div class="spec-box">
+                <h5>BIM 3D</h5>
+                <span>Tekla &amp; SAP2000</span>
+              </div>
+              <div class="spec-box">
+                <h5>SSOMA</h5>
+                <span>Plan por obra</span>
+              </div>
+              <div class="spec-box">
+                <h5>RNE</h5>
+                <span>Norma E.090</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodología de Trabajo -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag"><i class="fas fa-tasks"></i> Cómo trabajamos</span>
+        <h2>Proceso en 4 etapas</h2>
+        <p>Cada etapa termina con un entregable que usted revisa y aprueba antes de pasar a la siguiente.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="fas fa-comments"></i></div>
+          <h4>Evaluación y Cotización</h4>
+          <p>Revisamos planos, visitamos el terreno y entregamos una propuesta técnica y económica.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h4>Ingeniería</h4>
+          <p>Cálculo estructural según E.090 y planos de fabricación detallados en Tekla.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="fas fa-cogs"></i></div>
+          <h4>Fabricación</h4>
+          <p>Corte CNC, armado, soldadura y aplicación del sistema de pintura especificado.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <h4>Montaje y Entrega</h4>
+          <p>Izaje en obra, torqueo de pernos y entrega del dossier de calidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrusel Horizontal de Clientes -->
+  <section class="clients-carousel-section">
+    <div class="container">
+      <div class="section-header section-header-compact">
+        <span class="badge-tag"><i class="fas fa-handshake"></i> Clientes</span>
+        <h2>Empresas que han trabajado con nosotros</h2>
+        <p>Hemos ejecutado proyectos y suministros para estas empresas.</p>
+      </div>
+    </div>
+
+    <div class="clients-slider">
+      <div class="clients-track">
+        <!-- Bloque 1 -->
+        <div class="client-logo-card">
+          <img src="img/realplaza-seeklogo.png" alt="Real Plaza" title="Real Plaza" loading="lazy">
+        </div>
+
+        <div class="client-logo-card">
+          <img src="img/tramontina-1.svg" alt="Tramontina" title="Tramontina" loading="lazy">
+        </div>
+
+        <div class="client-logo-card">
+          <img src="img/promart-seeklogo.png" alt="Promart Homecenter" title="Promart Homecenter" loading="lazy">
+        </div>
+
+        <!-- Bloque 2 -->
+        <div class="client-logo-card">
+          <img src="img/realplaza-seeklogo.png" alt="Real Plaza" title="Real Plaza" loading="lazy">
+        </div>
+
+        <div class="client-logo-card">
+          <img src="img/tramontina-1.svg" alt="Tramontina" title="Tramontina" loading="lazy">
+        </div>
+
+        <div class="client-logo-card">
+          <img src="img/promart-seeklogo.png" alt="Promart Homecenter" title="Promart Homecenter" loading="lazy">
+        </div>
+
+        <!-- Bloque 3 (Loop continuo, decorativo) -->
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/realplaza-seeklogo.png" alt="" loading="lazy">
+        </div>
+
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/tramontina-1.svg" alt="" loading="lazy">
+        </div>
+
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/promart-seeklogo.png" alt="" loading="lazy">
+        </div>
+
+        <!-- Bloque 4 (Loop continuo, decorativo) -->
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/realplaza-seeklogo.png" alt="" loading="lazy">
+        </div>
+
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/tramontina-1.svg" alt="" loading="lazy">
+        </div>
+
+        <div class="client-logo-card" aria-hidden="true">
+          <img src="img/promart-seeklogo.png" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes (FAQ) -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag"><i class="fas fa-question-circle"></i> Preguntas Frecuentes</span>
+        <h2>Preguntas frecuentes</h2>
+        <p>Qué necesitamos para cotizar, qué normas aplicamos y cómo definimos los plazos.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="accordion-item active">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="true">
+            <h4>¿Qué información necesitan para cotizar?</h4>
+            <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+          </div>
+          <div class="accordion-body">
+            Planos de arquitectura o estructuras (DWG o PDF), ubicación de la obra y especificaciones básicas: tipo de acero, cobertura y sistema de pintura. Si no tiene planos, hacemos el levantamiento en campo y el diseño completo.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <h4>¿Trabajan en provincias?</h4>
+            <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+          </div>
+          <div class="accordion-body">
+            Sí. Coordinamos el transporte de la estructura, las cuadrillas de montaje y las grúas para obras en costa, sierra y selva.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <h4>¿Qué normas aplican a sus estructuras?</h4>
+            <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+          </div>
+          <div class="accordion-body">
+            Diseño según las normas E.030 (Diseño Sismorresistente) y E.090 (Estructuras Metálicas) del RNE y la especificación AISC 360; soldadura según AWS D1.1. Al final entregamos un dossier de calidad con certificados de material y resultados de ensayos.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" role="button" tabindex="0" aria-expanded="false">
+            <h4>¿Cuánto demora una nave o un almacén?</h4>
+            <i class="fas fa-chevron-down accordion-icon" aria-hidden="true"></i>
+          </div>
+          <div class="accordion-body">
+            Depende del tonelaje, el tipo de cobertura y el acceso a la obra. Cada cotización incluye un cronograma por etapas (ingeniería, fabricación, transporte y montaje) con fechas definidas.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <h2>¿Tiene un proyecto en evaluación?</h2>
+          <p>Envíenos sus planos (DWG o PDF) y le responderemos con una propuesta técnica y económica.</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="PAG/Contactos.html" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Solicitar Cotización
+          </a>
+          <a href="https://wa.me/51987654321?text=Hola%20Arcove%20SAC%2C%20deseo%20cotizar%20un%20proyecto" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ARCOVE <span>SAC</span></h3>
+          <p>Empresa peruana de diseño, fabricación y montaje de estructuras metálicas para la industria, la minería, la logística y el comercio.</p>
+          <div class="top-bar-social footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-angle-right"></i> Inicio</a></li>
+            <li><a href="PAG/Quienes%20Somos.html"><i class="fas fa-angle-right"></i> Quiénes Somos</a></li>
+            <li><a href="PAG/Servicios.html"><i class="fas fa-angle-right"></i> Servicios</a></li>
+            <li><a href="PAG/Contactos.html"><i class="fas fa-angle-right"></i> Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="PAG/Servicios.html"><i class="fas fa-angle-right"></i> Cálculo Estructural</a></li>
+            <li><a href="PAG/Servicios.html"><i class="fas fa-angle-right"></i> Naves Industriales</a></li>
+            <li><a href="PAG/Servicios.html"><i class="fas fa-angle-right"></i> Montaje e Izaje</a></li>
+            <li><a href="PAG/Servicios.html"><i class="fas fa-angle-right"></i> Mantenimiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lima, Perú · Obras en todo el país</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+51987654321">+51 987 654 321</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@arcovesac.com">info@arcovesac.com</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Lunes a sábado, 8:00 a. m. – 6:00 p. m.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; <span id="current-year">2026</span> Arcove SAC. Todos los derechos reservados. RUC: 20600000000</p>
+        <div>
+          <a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/51987654321?text=Hola%20Arcove%20SAC%2C%20deseo%20solicitar%20informaci%C3%B3n%20y%20cotizaci%C3%B3n" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
 </body>
 </html>

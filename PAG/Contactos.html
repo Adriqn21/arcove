@@ -1,38 +1,335 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos y Cotizaciones | Arcove SAC</title>
+  <meta name="description" content="Póngase en contacto con el equipo técnico de Arcove SAC. Solicite cotizaciones para fabricación, montaje y mantenimiento de estructuras metálicas.">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-
-</div>
-<header class="site-header animate__animated animate__fadeInDown">
-  <div class="header-container">
-    <a href="index.html" class="nav-logo">Arcove SAC</a>
-
-
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-
-
-    <nav class="main-nav" id="main-nav">
-      <ul class="nav-list">
-        <li><a href="../index.html" class="active">Inicio</a></li>
-        <li><a href="PAG/Quienes Somos.html">Quiénes Somos</a></li>
-        <li><a href="PAG/Servicios.html">Servicios</a></li>
-        <li><a href="PAG/Contactos.html">Contactos</a></li>
-      </ul>
-    </nav>
+  <!-- Barra Superior Minimalista -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <div class="top-bar-contact">
+        <a href="mailto:info@arcovesac.com"><i class="fas fa-envelope"></i> info@arcovesac.com</a>
+        <a href="tel:+51987654321"><i class="fas fa-phone-alt"></i> +51 987 654 321</a>
+        <span><i class="fas fa-map-marker-alt"></i> Lima, Perú</span>
+      </div>
+      <div class="top-bar-social">
+        <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/51987654321" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
   </div>
-</header>
 
-<script src="js/app.js"></script>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../img/logo arcove.png" alt="Logo Arcove SAC" onerror="this.src='../img/log.png'">
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">ARCOVE <span>SAC</span></span>
+          <span class="nav-logo-subtitle">Ingeniería & Estructuras</span>
+        </div>
+      </a>
 
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="Quienes Somos.html">Quiénes Somos</a></li>
+          <li><a href="Servicios.html">Servicios</a></li>
+          <li><a href="Contactos.html" class="active">Contactos</a></li>
+        </ul>
+        <a href="Contactos.html" class="nav-cta">
+          <i class="fas fa-file-signature"></i> Cotizar Proyecto
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Subheader Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="badge-tag light"><i class="fas fa-headset"></i> Atención Especializada</span>
+      <h1 class="animate__animated animate__fadeInDown">Contáctanos</h1>
+      <p class="animate__animated animate__fadeInUp">Conversemos sobre las especificaciones y alcances de su próxima obra o estructura metálica.</p>
+      <div class="breadcrumbs">
+        <a href="../index.html">Inicio</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.65rem;"></i>
+        <span>Contactos</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto Minimalista -->
+  <section class="contact-section">
+    <div class="container">
+
+      <!-- Tarjetas de Información Minimalistas -->
+      <div class="contact-cards-grid">
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-map-pin"></i></div>
+          <h4>Ubicación</h4>
+          <p>Av. Industrial 450, Lima, Perú</p>
+          <small style="color: var(--accent-hover); font-weight: 700;">Cobertura a Nivel Nacional</small>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>Teléfonos</h4>
+          <p><a href="tel:+51987654321">+51 987 654 321</a></p>
+          <p><a href="tel:+51012345678">(01) 234-5678</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <h4>Correos</h4>
+          <p><a href="mailto:ventas@arcovesac.com">ventas@arcovesac.com</a></p>
+          <p><a href="mailto:info@arcovesac.com">info@arcovesac.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+          <h4>Horarios</h4>
+          <p>Lun - Vie: 8:00 AM - 6:00 PM</p>
+          <p>Sábados: 8:00 AM - 1:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Layout de Formulario Minimalista -->
+      <div class="contact-form-layout">
+        <div class="contact-form-wrapper">
+          <span class="badge-tag"><i class="fas fa-paper-plane"></i> Propuesta Inmediata</span>
+          <h3>Solicitud de Cotización</h3>
+          <p class="subtitle">Complete los campos requeridos y nuestro equipo técnico evaluará su requerimiento a la brevedad.</p>
+
+          <div id="formAlert" class="form-alert"></div>
+
+          <form id="quoteForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Nombre / Empresa *</label>
+                <input type="text" id="name" class="form-control" placeholder="Ej. Minera o Constructora SAC" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Teléfono / Celular *</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Ej. +51 987654321" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Correo Electrónico *</label>
+                <input type="email" id="email" class="form-control" placeholder="nombre@empresa.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="service">Servicio Requerido *</label>
+                <select id="service" class="form-control" required>
+                  <option value="Diseño y Cálculo Estructural">Diseño y Cálculo Estructural</option>
+                  <option value="Fabricación de Estructuras Metálicas">Fabricación de Estructuras Metálicas</option>
+                  <option value="Montaje e Izaje Industrial">Montaje e Izaje Industrial</option>
+                  <option value="Nave Industrial o Almacén">Nave Industrial o Almacén</option>
+                  <option value="Mantenimiento y Tratamiento Anticorrosivo">Mantenimiento y Tratamiento Anticorrosivo</option>
+                  <option value="Carpintería Metálica y Escaleras">Carpintería Metálica y Escaleras</option>
+                  <option value="Otro Requerimiento">Otro Requerimiento</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Detalle del Proyecto / Medidas / Ubicación *</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="Indique dimensiones estimadas, tonelaje, ubicación del terreno u observaciones clave..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Enviar Solicitud a Ingenieros
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <div>
+            <h4>Respaldo de Ingeniería</h4>
+            <p>Atención directa con ingenieros especialistas colegiados y certificados bajo normativas internacionales.</p>
+
+            <div class="guarantee-box">
+              <h5><i class="fas fa-bolt"></i> Respuesta Ágil</h5>
+              <p>Elaboración de presupuestos preliminares en menos de 24 a 48 horas.</p>
+            </div>
+
+            <div class="guarantee-box">
+              <h5><i class="fas fa-award"></i> Dossier de Calidad</h5>
+              <p>Certificados de materiales ASTM, ensayos no destructivos y garantía técnica.</p>
+            </div>
+
+            <div class="guarantee-box">
+              <h5><i class="fas fa-shield-alt"></i> Seguridad SSOMA</h5>
+              <p>Protocolos de montaje con cero accidentes y personal con SCTR.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <a href="https://wa.me/51987654321?text=Hola%20Arcove%20SAC,%20deseo%20comunicarme%20directamente%20con%20un%20asesor" target="_blank" class="btn btn-outline-light" style="width: 100%;">
+              <i class="fab fa-whatsapp"></i> Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes Minimalistas (FAQ) -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag"><i class="fas fa-question-circle"></i> Resolviendo Consultas</span>
+        <h2>Preguntas Frecuentes</h2>
+        <p>Conozca las respuestas a las dudas más recurrentes sobre nuestro proceso de cotización y ejecución.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <h4>¿Qué información necesitan para elaborar una cotización precisa?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            Idealmente requerimos los planos de arquitectura o estructuras (en formato CAD/PDF), el lugar de ejecución de la obra y las especificaciones de acabados (tipo de cobertura o pintura). Si aún no cuenta con planos, nuestro equipo puede realizar el levantamiento y diseño estructural desde cero.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>¿Realizan proyectos en provincias fuera de Lima?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            Sí. Arcove SAC cuenta con logística y cuadrillas móviles para el transporte, maniobra y montaje de estructuras metálicas en cualquier región del Perú (Costa, Sierra y Selva), adaptando el diseño a las cargas de viento, sismo y nieve según la zona geográfica.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>¿Qué certificaciones y normas aplican en sus trabajos?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            Trabajamos bajo la norma técnica peruana E.090 (Estructuras Metálicas), el código de soldadura estructural AWS D1.1, especificaciones del AISC (American Institute of Steel Construction) y normas ASTM para aceros comerciales e industriales.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h4>¿Ofrecen servicio de mantenimiento para estructuras ya construidas?</h4>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </div>
+          <div class="accordion-body">
+            Sí, realizamos evaluaciones de patología estructural, arenado (Sandblasting), repintado epóxico de alta resistencia, cambio de techos/coberturas y refuerzos estructurales de pórticos para naves que requieran mayor capacidad de carga.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de Página -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ARCOVE <span>SAC</span></h3>
+          <p>Ingeniería de precisión, fabricación y montaje de estructuras metálicas de alta resistencia para proyectos industriales y comerciales en el Perú.</p>
+          <div class="top-bar-social" style="gap: 10px;">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51987654321" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html"><i class="fas fa-angle-right"></i> Inicio</a></li>
+            <li><a href="Quienes Somos.html"><i class="fas fa-angle-right"></i> Quiénes Somos</a></li>
+            <li><a href="Servicios.html"><i class="fas fa-angle-right"></i> Servicios</a></li>
+            <li><a href="Contactos.html"><i class="fas fa-angle-right"></i> Contactos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="Servicios.html"><i class="fas fa-angle-right"></i> Cálculo Estructural</a></li>
+            <li><a href="Servicios.html"><i class="fas fa-angle-right"></i> Naves Industriales</a></li>
+            <li><a href="Servicios.html"><i class="fas fa-angle-right"></i> Montaje e Izaje</a></li>
+            <li><a href="Servicios.html"><i class="fas fa-angle-right"></i> Mantenimiento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto Directo</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lima, Perú - Cobertura Nacional</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+51987654321">+51 987 654 321</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@arcovesac.com">info@arcovesac.com</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Lun - Sáb: 8:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Arcove SAC. Todos los derechos reservados. RUC: 20600000000</p>
+        <div>
+          <a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/51987654321?text=Hola%20Arcove%20SAC,%20deseo%20solicitar%20información%20y%20cotización" class="floating-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
 </body>
 </html>
